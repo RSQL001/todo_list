@@ -83,12 +83,7 @@ export default function Home() {
 
       </div>
 
-      {
-        todos.map((todo, key) => <ShowList onChecked={onChecked} onDelete={onDelete} todo={todo} i={key} />)
-
-        // < div >
-
-        // <button onClick={() => onDelete(i)}> viewAll</button>
+      { todos.map((todo, key) => <ShowList onChecked={onChecked} onDelete={onDelete} todo={todo} i={key} key={key} />)
       }
 
       
