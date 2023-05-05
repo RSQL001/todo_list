@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-// import AddNewButton from './add_button';
 import AddInput from './add_input';
 import ShowList from './show_list';
 

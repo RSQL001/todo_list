@@ -1,26 +1,18 @@
 
-import { useState } from "react";
 
 export default function ShowList(props) {
   const { onDelete, onChecked, todo, i } = props
   console.log(props)
 
-  const [checked, setChecked] = useState([false]);
 
-  const handleChange = (e) => {
-
-    setChecked(!checked)
-    console.log(checked)
-  }
-
-
+  
   return (
     <div className="px-4 py-4 sm:grid sm:grid-cols-3 sm:gap-1 sm:px-0">
 
       <ul>
         <div className="flex items-center justify-flex-start mb-2">
           <input id="default-checkbox" type="checkbox" onChange={() => onChecked(i)} class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
-          <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{todo.task}</label>
+          <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{todo?.task}</label>
         </div>
 
       </ul>
