@@ -1,7 +1,7 @@
 
 import { useState } from "react";
-import AddInput from './add_input';
-import ShowList from './show_list';
+import AddInput from './components/add_input';
+import ShowList from './components/show_list';
 
 
 

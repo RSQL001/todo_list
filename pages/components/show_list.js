@@ -7,7 +7,7 @@ export default function ShowList(props) {
 
   
   return (
-    <div className="px-4 py-4 sm:grid sm:grid-cols-3 sm:gap-1 sm:px-0">
+    <div className="section px-4 py-4 sm:grid sm:grid-cols-3 sm:gap-1 sm:px-0">
 
       <ul>
         <div className="flex items-center justify-flex-start mb-2">
